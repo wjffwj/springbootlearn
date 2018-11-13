@@ -1,0 +1,21 @@
+SpringBoot探究
+
+1.POM文件  ：
+
+           父项目 :里面是依赖的仲裁中心  导入依赖无需版本   不在父项目中的需要写版本
+        <parent>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-parent</artifactId>
+                <version>1.5.9.RELEASE</version>
+         </parent>
+
+
+2.
+    <dependency>
+               <groupId>org.springframework.boot</groupId>
+               <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    spring-boot-starter-web:Springboot场景启动器： 帮我们导入了 web模块相关的依赖
+    springboot将所有功能场景抽取出来  做成一个个starters   只需引入starter，相关场景的所有依赖都会导入进来，版本由springboot控制
+    用什么功能，导入什么场景启动器

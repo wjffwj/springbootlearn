@@ -1,0 +1,27 @@
+1.创建maven工程
+2.导入springboot依赖
+    <parent>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-parent</artifactId>
+            <version>1.5.9.RELEASE</version>
+        </parent>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+            </dependency>
+        </dependencies>
+
+3.  编写一个主程序， 启动springboot应用
+
+4.运行主程序测试
+
+5.简化部署  :将应用打包成一个可执行的jar包    然后java -jar  包名 部署完成   springboot提供嵌入式的tomcat
+   <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
